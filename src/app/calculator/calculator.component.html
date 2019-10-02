@@ -1,0 +1,104 @@
+<!-- <div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6 form-group">
+            <input [(ngModel)]='num1' type="number" name="num1" class="form-control">
+        </div>
+        <div class="col-md-6 form-group">
+            <input [(ngModel)]='num2' type="number" name="num2" class="form-control">
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-3">
+            <button class="btn btn-success" (click)="addition()"> SUM </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger" (click)="division()"> DIVISION </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary" (click)="subtraction()"> SUBTRACTION </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-warning" (click)="multiplication()"> MULTIPLICATION </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <h4> The result of {{num1}} and {{num2}} is {{result}}.</h4>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="alert alert-warning">{{finalResult}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <input class="form-control" disabled [(ngModel)]="workingNumbers">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-2"><button (click)="appendNumbers('7')" class="btn btn-default">7</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('8')" class="btn btn-default">8</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('9')" class="btn btn-default">9</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-2"><button (click)="appendNumbers('6')" class="btn btn-default">6</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('5')" class="btn btn-default">5</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('4')" class="btn btn-default">4</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-2"><button (click)="appendNumbers('3')" class="btn btn-default">3</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('2')" class="btn btn-default">2</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('1')" class="btn btn-default">1</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- <div class="col-md-2"><button (click)="sum()" class="btn btn-default">+</button></div> -->
+            <div class="col-md-2"><button (click)="appendNumbers('+')" class="btn btn-default">+</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('-')" class="btn btn-default">-</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('*')" class="btn btn-default">*</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-2"><button (click)="appendNumbers('0')" class="btn btn-default">0</button></div>
+            <div class="col-md-2"><button (click)="appendNumbers('.')" class="btn btn-default">.</button></div>
+            <div class="col-md-2"><button (click)="deleteNumber()" class="btn btn-default">UNDO</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-md-2"><button (click)="clearData()" class="btn btn-default">C</button></div>
+            <div class="col-md-2"><button (click)="evaluateData()" class="btn btn-default">=</button></div>
+
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col-md-6">
+            <input type="number" class="form-control" name="num1" [(ngModel)]="num1">
+        </div>
+        <div class="col-md-6">
+            <input type="number" class="form-control" name="num2" [(ngModel)]="num2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="alert alert-warning">{{result}}</div>
+        </div>
+    </div> -->
+</div>
